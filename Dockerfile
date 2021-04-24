@@ -10,7 +10,7 @@
 FROM julia:1.6.1
 
 # HTTP port
-EXPOSE 1234
+EXPOSE 80
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y curl vim git
 # add a new user called "pluto"
 RUN useradd -ms /bin/bash pluto
