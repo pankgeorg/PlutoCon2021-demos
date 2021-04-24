@@ -1,0 +1,14 @@
+[Unit]
+Description=PlutoSliderServer Service
+After=network.target
+
+[Service]
+ExecStart=julia --project="pluto-deployment-environment" -e "using PlutoSliderServer; PlutoSliderServer.runrepository()"
+WorkingDirectory=/root/PlutoCon2021-demos
+StandardOutput=/root/PlutoCon2021-demos/stdout.log
+StandardError=/root/PlutoCon2021-demos/stderr.log
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
