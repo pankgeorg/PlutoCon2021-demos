@@ -10,7 +10,7 @@ output_dir="."
 
 # the following notebooks are disabled because they are not working well. of course i want to fix this, but i will only have time after the conference... sorry!
 [SliderServer]
-host=0.0.0.0
+host="206.189.7.102"
 port=80
 start_dir="."
 exclude=[
