@@ -9,6 +9,7 @@ ignore_cache = [
 output_dir="."
 
 # the following notebooks are disabled because they are not working well. of course i want to fix this, but i will only have time after the conference... sorry!
+# Update June 2021: Downscaling 
 [SliderServer]
 host="206.189.7.102"
 port=80
